@@ -40,6 +40,20 @@ namespace GBApp.Controllers
                 return BadRequest(e.Message);
             }
         }
-        
+
+        [HttpGet("GetCurrentDate")]
+        public async Task<IActionResult> GetCurrentDate()
+        {
+            try
+            {
+
+                return Ok(DateTime.Now.ToShortDateString());
+                       
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }
