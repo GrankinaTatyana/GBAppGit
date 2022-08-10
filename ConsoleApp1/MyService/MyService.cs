@@ -15,6 +15,9 @@ using System.Text;
         {
             return "Hello in my App, today is "+ date.Value.ToShortDateString();
         }
-        
+        public string GetWelcome2(DateTime? date)
+        {
+            return "Hello in my App, tommorow is " + date.Value.ToLongDateString();
+        }
     }
 }
